@@ -6,7 +6,7 @@ pipeline {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/mhumair/testapp.git'
-
+            sh "node app"
             // Run Maven on a Unix agent.
             
 
@@ -14,12 +14,6 @@ pipeline {
             // bat "mvn -Dmaven.test.failure.ignore=true clean package"
          }
 
-      }
-      stage('Run') {
-         steps{
-            sh "node app"
-         }
-      }
-    
+      }    
    }
 }
