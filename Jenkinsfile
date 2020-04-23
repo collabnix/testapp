@@ -17,7 +17,7 @@ pipeline {
       }
       stage('Run') {
          steps{
-            sh 'node app'
+            sh "node app"
          }
       }
     
