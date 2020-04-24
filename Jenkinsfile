@@ -19,7 +19,8 @@ pipeline {
       }
       stage('Test') {
 	 steps {
-	    tpRunJob agentId: 'ph3CBxbUPUqe3QiotEWmWA', jobId: 'o7wS4nJc6Em3PEz_yqZErw', projectId: 'DzkGyzxkM0GLy799JBllVQ', waitJobFinishSeconds: 180
+	   // tpRunJob agentId: 'ph3CBxbUPUqe3QiotEWmWA', jobId: 'o7wS4nJc6Em3PEz_yqZErw', projectId: 'DzkGyzxkM0GLy799JBllVQ', waitJobFinishSeconds: 180
+	    runtpjob jobId: 'o7wS4nJc6Em3PEz_yqZErw', projectId: 'DzkGyzxkM0GLy799JBllVQ', waitJobFinishSeconds: 1800
 	    sh "killall -9 node"
 
 	 }
