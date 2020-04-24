@@ -20,7 +20,7 @@ pipeline {
       stage('Test') {
 	 steps {
 runtpjob jobId: 'o7wS4nJc6Em3PEz_yqZErw', projectId: 'DzkGyzxkM0GLy799JBllVQ', waitJobFinishSeconds: 1800
-	    sh killall -9 node	
+	    sh "killall -9 node"
 
 	 }
       }
