@@ -6,8 +6,6 @@ services:
     depends_on:
       - chrome
       - firefox
-    volumes:
-      - /path/to/host/folder:/var/testproject/agent
     environment:
       TP_API_KEY: "REPLACE_WITH_YOUR_KEY"
       TP_JOB_ID: "REPLACE_WITH_YOUR_JOB_ID"
