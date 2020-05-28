@@ -19,7 +19,7 @@ pipeline {
       }
       stage('Test') {
 	 steps {
-	    tpJobRun agentId: '0OvZAzBaC0u4YUkqezrACg', jobId: 'EYWRFEQLqUiE57EYdmt43Q', projectId: '6m1LeGuoB0qPgwS05Ew4yA', waitJobFinishSeconds: 1800
+	    tpJobRun agentId: 'ZEBz4h3YZUOxb5s8xTgVeg', jobId: 'GVHRxGQG40OQvCrFJvBuow', projectId: '6m1LeGuoB0qPgwS05Ew4yA', waitJobFinishSeconds: 1800
 	    
 	    sh "killall -9 node"
 
